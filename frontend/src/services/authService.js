@@ -45,7 +45,7 @@ export const authService = {
   },
 
   getGoogleOAuthUrl: () => {
-    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://personal-finance-aggregator.onrender.com';
     return `${apiBaseUrl}/oauth2/authorization/google`;
   },
 };
